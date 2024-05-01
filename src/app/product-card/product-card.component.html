@@ -1,0 +1,16 @@
+ <div class="card">
+    <div class="card-header">
+        {{getProduct.pname}}
+    </div>
+    <div class="card-body">
+        {{getProduct.pdetails}}
+        The product is {{getProduct.pname}} and its status is 
+        <strong>{{getProduct.pstatus}}</strong>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button mat-raised-button color="primary" (click)="onStatusChange(allProductsStatus.InProgress)">In Progress</button>
+        <button mat-raised-button color="primary" (click)="onStatusChange(allProductsStatus.Dispatched)">Dispatched</button>
+        <button mat-raised-button color="primary" (click)="onStatusChange(allProductsStatus.Delievered)">Delievered</button>
+    </div>
+ </div>
+ 

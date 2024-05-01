@@ -1,0 +1,21 @@
+<p>product-form works!</p>
+
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="productsForm" (ngSubmit)="onProductAdd()">
+            <div class="form-group">
+                <label for="pname">
+                    Product Name
+                </label>
+                <input id="pname" formcontrolname="pname" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pdetails">
+                    Product Description
+                </label>
+                <textarea id="pdetails" formcontrolname="pdetails" rows="4" class="form-control"></textarea>
+            </div>
+            <button mat-raised-button color="primary">Add New Product</button>
+        </form>
+    </div>
+</div>
